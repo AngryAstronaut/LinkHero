@@ -1,0 +1,23 @@
+{
+  "name": "Link Hero",
+  "manifest_version": 3,
+  "version": "0.0.0.1",
+  "icons": { "16": "bluedefault.png",
+           "48": "bluedefault.png",
+          "128": "bluedefault.png" },
+  "description": "On click, converts page links to open in new tab.",
+  "host_permissions": ["https://*/","http://*/"],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "notifications"
+  ],
+  "background": {
+    "service_worker":
+    "background.js"
+  },
+  "action": {
+    "default_title": "Link Hero",
+    "default_popup": "menu.html"
+  }
+}
